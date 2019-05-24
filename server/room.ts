@@ -99,6 +99,10 @@
       Room.idRange.splice(random, 1);
    }
 
+   public static getRoom (roomID) : any {
+      return;
+   }
+
    /**delete  */
    public static delete (room : Room) {
       let i = Room.all.indexOf(room);
@@ -107,7 +111,7 @@
          Room.idRange.push(room.id);
       }
       [...room.users].forEach((u) => {
-         if (u instanceof IUser)
+         if (u instanceof IUser) {}
       })
    }
 

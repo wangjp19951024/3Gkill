@@ -2,7 +2,7 @@
 
 import io = require('socket.io');
 const http = require('http');
-import { Game } from './game';
+import Game from './game';
 
 const app = http.createServer();
 const ioS = io.listen(app);
